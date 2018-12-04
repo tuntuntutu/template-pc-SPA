@@ -3,7 +3,7 @@ import Create from './create/index';
 
 
 export default {
-  path: 'originality-manager',
+  path: 'homepage',
   indexRoute: { component: Entry },
   childRoutes: [
     {

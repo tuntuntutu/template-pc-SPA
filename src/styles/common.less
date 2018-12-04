@@ -1,74 +1,76 @@
 .cc-search {
   padding: 0 20px;
+
   .label-box {
     display: inline-block;
     margin: 0 30px 20px 0;
+
     .label {
       &.label-required {
-        &:before{
+        &::before {
           display: inline-block;
           margin-right: 4px;
-          content: "*";
+          font-size: 14px;
           font-family: SimSun;
           line-height: 1;
-          font-size: 14px;
           color: #f5222d;
+          content: "*";
         }
       }
-      &:after {
-        content: ":";
-        margin: 0 8px 0 2px;
+
+      &::after {
         position: relative;
         top: -.5px;
+        margin: 0 8px 0 2px;
+        content: ":";
       }
     }
   }
 }
 
-.cc{
-
-  &-input-size{
+.cc {
+  &-input-size {
     width: 200px;
   }
 
-  &-table{
+  &-table {
     padding: 0 20px;
 
-    td > a{
+    td > a {
       margin: 0 3px;
     }
 
-    &-filter{
-      margin-bottom: 10px;
+    &-filter {
       padding: 20px;
       padding-bottom: 0;
+      margin-bottom: 10px;
       overflow: hidden;
 
-      &.ant-form-inline{
-        .ant-form-item{
+      &.ant-form-inline {
+        .ant-form-item {
           margin-right: 20px;
           margin-bottom: 20px;
 
-          .ant-btn{
+          .ant-btn {
             margin-left: 10px;
           }
         }
 
-        .ant-select{
+        .ant-select {
           width: 200px;
         }
 
-        .ant-form-item-label{
+        .ant-form-item-label {
           width: 80px;
         }
       }
     }
 
-    &-operation{
-      margin-bottom: 20px;
+    &-operation {
       padding: 0 20px;
+      margin-bottom: 20px;
 
-      > .ant-btn{
+      > .ant-btn {
         margin-right: 10px;
       }
     }
@@ -76,15 +78,16 @@
 }
 
 .ant-table-tbody,
-.ant-table-thead > tr > th{
+.ant-table-thead > tr > th {
   text-align: center;
 }
 
 /* fix radio radius */
-.ant-radio-inner:after{
+.ant-radio-inner::after {
   border-radius: 4px;
 }
 
-.ant-pagination-jump-prev:after, .ant-pagination-jump-next:after{
+.ant-pagination-jump-prev::after,
+ .ant-pagination-jump-next::after {
   display: inline-block;
 }

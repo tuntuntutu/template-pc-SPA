@@ -1,10 +1,9 @@
-# originality-manager
+# homepage
 
-创意管理
+首页
 
 ### 交互稿地址
 
-http://wiki.51caocao.cn/pages/viewpage.action?pageId=15620451
 
 ### 备注
 
