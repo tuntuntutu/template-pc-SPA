@@ -92,10 +92,12 @@ export default class Index extends Component {
 
 
           <FormItem {...formItemLayout} label=" " colon={false}>
-            [
-            <Button onClick={this.submit} type="primary">保存</Button>,
-            <Link to={{ pathname: pages.list }}><Button>取消</Button></Link>,
+            {
+              [
+                <Button onClick={this.submit} type="primary">保存</Button>,
+                <Link to={{ pathname: pages.list }}><Button>取消</Button></Link>,
               ]
+            }
           </FormItem>
         </Form>
       </div>
