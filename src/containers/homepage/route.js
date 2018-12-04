@@ -11,7 +11,7 @@ export default {
       component: Create,
     },
     {
-      path: 'Index',
+      path: 'index',
       component: Entry,
     },
   ],

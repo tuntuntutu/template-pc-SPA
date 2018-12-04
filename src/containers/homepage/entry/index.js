@@ -70,7 +70,7 @@ export default class Index extends Component {
         component: 'Input', key: 'id', label: '创意id',
       },
       {
-        component: <SelectMax options={applyStatusList} />, key: 'status', label: '审核状态',
+        component: <SelectMax />, key: 'status', label: '审核状态',
       },
     ];
 

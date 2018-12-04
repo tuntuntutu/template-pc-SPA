@@ -1,10 +1,10 @@
 import Index from '@/containers/index';
-import Home from '@/containers/home/route';
+import Home from '@/containers/homepage/route';
 
 export default {
-  path: '/',
+  path: '',
   component: Index,
-  childRoute: [
+  childRoutes: [
     Home,
   ],
 };
