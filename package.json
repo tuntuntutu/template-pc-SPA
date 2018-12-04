@@ -1,0 +1,58 @@
+{
+  "name": "template-pc-SPA",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tuntuntutu-scabbard serve --open --host 127.0.0.1  --port 9999",
+    "dev": "tuntuntutu-scabbard serve --open",
+    "build": "tuntuntutu-scabbard build -R",
+    "lint": "eslint --fix src/",
+    "lint:style": "stylelint --fix 'src/**/*.less'",
+    "precommit": "lint-staged"
+  },
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "tuntuntutu"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.less": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-tuntuntutu"
+    ]
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "stylelint": {
+    "extends": [
+      "stylelint-config-tuntuntutu"
+    ]
+  },
+  "dependencies": {
+    "tuntuntutu-react-components": "^1.0.2",
+    "antd": "3.6.3",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "react-router": "3.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-tuntuntutu": "^1.0.1",
+    "eslint-config-tuntuntutu": "^1.0.1",
+    "stylelint-config-tuntuntutu": "^1.0.1",
+    "tuntuntutu-scabbard": "^1.0.1"
+  }
+}

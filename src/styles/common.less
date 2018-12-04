@@ -1,0 +1,90 @@
+.cc-search {
+  padding: 0 20px;
+  .label-box {
+    display: inline-block;
+    margin: 0 30px 20px 0;
+    .label {
+      &.label-required {
+        &:before{
+          display: inline-block;
+          margin-right: 4px;
+          content: "*";
+          font-family: SimSun;
+          line-height: 1;
+          font-size: 14px;
+          color: #f5222d;
+        }
+      }
+      &:after {
+        content: ":";
+        margin: 0 8px 0 2px;
+        position: relative;
+        top: -.5px;
+      }
+    }
+  }
+}
+
+.cc{
+
+  &-input-size{
+    width: 200px;
+  }
+
+  &-table{
+    padding: 0 20px;
+
+    td > a{
+      margin: 0 3px;
+    }
+
+    &-filter{
+      margin-bottom: 10px;
+      padding: 20px;
+      padding-bottom: 0;
+      overflow: hidden;
+
+      &.ant-form-inline{
+        .ant-form-item{
+          margin-right: 20px;
+          margin-bottom: 20px;
+
+          .ant-btn{
+            margin-left: 10px;
+          }
+        }
+
+        .ant-select{
+          width: 200px;
+        }
+
+        .ant-form-item-label{
+          width: 80px;
+        }
+      }
+    }
+
+    &-operation{
+      margin-bottom: 20px;
+      padding: 0 20px;
+
+      > .ant-btn{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.ant-table-tbody,
+.ant-table-thead > tr > th{
+  text-align: center;
+}
+
+/* fix radio radius */
+.ant-radio-inner:after{
+  border-radius: 4px;
+}
+
+.ant-pagination-jump-prev:after, .ant-pagination-jump-next:after{
+  display: inline-block;
+}
